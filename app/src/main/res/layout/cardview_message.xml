@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bubble_corner_right"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/chatwats"
+            android:scaleType="centerCrop"
+            android:minWidth="305dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp" />
+        
+        <FrameLayout
+            android:id="@+id/frameLayoutVideoChat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:minWidth="305dp"
+            android:background="@color/black"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewVideoChat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_view"
+                android:backgroundTint="@color/colorGrisLigth"
+                android:layout_gravity="center"
+                android:alpha="0.7"/>
+
+            <ImageView
+                android:id="@+id/imageViewVideoChat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_play"
+                android:layout_gravity="center"/>
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/textViewUserNameTheGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Usuario"
+            android:textSize="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nuevo mensaje.."
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewDocument"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/ic_file" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Documento"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="1dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:00 P.M"
+                android:textSize="10dp"
+                android:textColor="@color/colorGrisLigth" />
+
+            <ImageView
+                android:id="@+id/imageViewCheck"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:src="@drawable/double_check_gray"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

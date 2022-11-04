@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginTop="7dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageUserToolbar"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/imageViewBack"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_circle_background_color="@color/white" />
+
+
+    <TextView
+        android:id="@+id/textViewUserNameToolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del usuario"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/circleImageUserToolbar"/>
+
+    <TextView
+        android:id="@+id/textViewOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_toRightOf="@id/circleImageUserToolbar"
+        android:layout_below="@id/textViewUserNameToolBar"
+        android:maxLines="1"/>
+
+
+</RelativeLayout>
